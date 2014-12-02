@@ -20,9 +20,9 @@ darkest_red = '#DC3F3F'
 darker_red = '#FD6666'
 lighter_red = '#FFAFAF'
 
-gray = '#3D3D3D'
-darker_gray = '#313131'
-medium_gray = '#5B5B5B'
+gray = '#5B5B5B'
+darkest_gray = '#313131'
+darker_gray = '#3D3D3D'
 lighter_gray = '#A4A4A4'
 
 yellow = '#CEF483'
@@ -36,12 +36,12 @@ module.exports =
   author: 'Maurício Batista (eddloschi@gmail.com)'
   settings: [
     settings:
-      background: darker_gray
+      background: darkest_gray
       caret: yellow
       foreground: white
       invisibles: white
-      lineHighlight: gray
-      selection: medium_gray
+      lineHighlight: darker_gray
+      selection: gray
   # Generic
   ,
     name: 'Comment'
@@ -239,13 +239,13 @@ module.exports =
     scope: 'markup.deleted.diff punctuation.definition.inserted'
     settings:
       foreground: red
-      background: gray
+      background: darker_gray
   ,
     name: 'Inserted Punctuation'
     scope: 'markup.inserted.diff punctuation.definition.inserted'
     settings:
       foreground: green
-      background: gray
+      background: darker_gray
   ,
     name: 'Diff Range'
     scope: 'meta.diff.range'
