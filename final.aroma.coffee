@@ -82,7 +82,7 @@ module.exports =
     name: 'Constant'
     scope: 'constant'
     settings:
-      foreground: lighter_pink
+      foreground: darker_pink
   ,
     name: 'Variable'
     scope: 'variable'
