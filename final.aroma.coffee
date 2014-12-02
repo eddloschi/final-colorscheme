@@ -16,6 +16,7 @@ darker_orange = '#FDAA66'
 lighter_orange = '#FFD3AF'
 
 red = '#FF8989'
+darkest_red = '#DC3F3F'
 darker_red = '#FD6666'
 lighter_red = '#FFAFAF'
 
@@ -212,5 +213,67 @@ module.exports =
     scope: 'markup.raw'
     settings:
       foreground: lighter_orange
+  # Diff
+  ,
+    name: 'Diff Header From File'
+    scope: 'meta.diff.header.from-file'
+    settings:
+      foreground: red
+  ,
+    name: 'Diff Header To File'
+    scope: 'meta.diff.header.to-file'
+    settings:
+      foreground: green
+  ,
+    name: 'Deleted'
+    scope: 'markup.deleted.diff'
+    settings:
+      background: darkest_red
+  ,
+    name: 'Inserted'
+    scope: 'markup.inserted.diff'
+    settings:
+      background: darker_green
+  ,
+    name: 'Deleted Punctuation'
+    scope: 'markup.deleted.diff punctuation.definition.inserted'
+    settings:
+      foreground: red
+      background: gray
+  ,
+    name: 'Inserted Punctuation'
+    scope: 'markup.inserted.diff punctuation.definition.inserted'
+    settings:
+      foreground: green
+      background: gray
+  ,
+    name: 'Diff Range'
+    scope: 'meta.diff.range'
+    settings:
+      foreground: blue
+  ,
+    name: 'GitGutter Deleted'
+    scope: 'markup.deleted.git_gutter'
+    settings:
+      foreground: darker_red
+  ,
+    name: 'GitGutter Inserted'
+    scope: 'markup.inserted.git_gutter'
+    settings:
+      foreground: green
+  ,
+    name: 'GitGutter Changed'
+    scope: 'markup.changed.git_gutter'
+    settings:
+      foreground: darker_blue
+  ,
+    name: 'GitGutter Ignored'
+    scope: 'markup.ignored.git_gutter'
+    settings:
+      foreground: lighter_gray
+  ,
+    name: 'GitGutter Untracked'
+    scope: 'markup.untracked.git_gutter'
+    settings:
+      foreground: lighter_gray
   ]
-
